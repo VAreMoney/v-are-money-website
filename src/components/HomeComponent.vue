@@ -5,15 +5,33 @@
         <div class="column is-full-width has-text-centered mb-6 mt-6">
           <div class="announcement">
             <div class="announcement-text">
-              <span>V has laid claim to our</span>
-              <a
-                href="https://dextools.io/app/en/base/pair-explorer/0xA2b9436D567A740357ca432b35582E93191e6a2F"
-                target="_blank"
-                class="has-text-yellow link-hover address-wrap dextools-link"
-              >
-                <img src="@/assets/images/chart-sites/dextools.svg" alt="Dextools Logo" class="dextools-logo"/> Dextools page
-              </a>
-              <span>!</span>
+              <div class="coingecko-announcement">
+                <span>V has petitioned for
+                  <a
+                    href="https://www.geckoterminal.com/base/pools/0xfca463ffce3e9528253a545a3358bba848cabc48"
+                    target="_blank"
+                    class="has-text-yellow link-hover address-wrap coingecko-link"
+                  >
+                    <img src="@/assets/images/chart-sites/coingecko.svg" alt="CoinGecko Logo" class="coingecko-logo"/> CoinGecko
+                  </a>
+                  listing!
+                </span>
+                <br />
+                <span>
+                  Claim ID: CL0309240067
+                </span>
+              </div>
+                <div class="dextools-announcement">
+                  <span>V has laid claim to our</span>
+                  <a
+                    href="https://dextools.io/app/en/base/pair-explorer/0xA2b9436D567A740357ca432b35582E93191e6a2F"
+                    target="_blank"
+                    class="has-text-yellow link-hover address-wrap dextools-link"
+                  >
+                    <img src="@/assets/images/chart-sites/dextools.svg" alt="Dextools Logo" class="dextools-logo"/> Dextools page
+                  </a>
+                  <span>!</span>
+                </div>
             </div>
             <div class="claim-id" style="display: none; visibility: hidden">Claim ID: XXXXXXX</div>
           </div>
@@ -149,13 +167,18 @@ const copyToClipboard = () => {
 }
 
 .announcement {
-  /*display: flex;*/
-  display: none;
-  visibility: hidden;
+  display: flex;
+/*  display: none;
+  visibility: hidden;*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 2.1rem;
+}
+
+.dextools-announcement {
+  display: none;
+  visibility: hidden;
 }
 
 .announcement-text {
@@ -179,6 +202,12 @@ const copyToClipboard = () => {
 }
 
 .dextools-logo {
+  height: 2.1rem;
+  margin-right: 0.2rem;
+  margin-left: 0.4rem;
+}
+
+.coingecko-logo {
   height: 2.1rem;
   margin-right: 0.2rem;
   margin-left: 0.4rem;
