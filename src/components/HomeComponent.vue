@@ -149,7 +149,9 @@ const copyToClipboard = () => {
 }
 
 .announcement {
-  display: flex;
+  /*display: flex;*/
+  display: none;
+  visibility: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;

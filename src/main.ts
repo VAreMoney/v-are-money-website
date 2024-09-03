@@ -8,10 +8,10 @@ import './assets/scss/style.scss'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faXTwitter, faTelegram } from '@fortawesome/free-brands-svg-icons'
+import { faXTwitter, faTwitter, faTelegram, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faCopy as faCopySolid } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faXTwitter, faTelegram, faCopySolid)
+library.add(faXTwitter, faTwitter, faTelegram, faTiktok, faCopySolid)
 
 const app = createApp(App)
 
