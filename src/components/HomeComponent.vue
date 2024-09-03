@@ -3,6 +3,20 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-full-width has-text-centered mb-6 mt-6">
+          <div class="announcement">
+            <div class="announcement-text">
+              <span>V has laid claim to our</span>
+              <a
+                href="https://dextools.io/app/en/base/pair-explorer/0xA2b9436D567A740357ca432b35582E93191e6a2F"
+                target="_blank"
+                class="has-text-yellow link-hover address-wrap dextools-link"
+              >
+                <img src="@/assets/images/chart-sites/dextools.svg" alt="Dextools Logo" class="dextools-logo"/> Dextools page
+              </a>
+              <span>!</span>
+            </div>
+            <div class="claim-id" style="display: none; visibility: hidden">Claim ID: XXXXXXX</div>
+          </div>
           <div class="title rubik-glitch-regular has-text-yellow" style="font-size: 6rem">
             v are money
           </div>
@@ -133,4 +147,39 @@ const copyToClipboard = () => {
     margin: 5px 0;
   }
 }
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+}
+
+.announcement-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.claim-id {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 0.5rem; /* Adjust this value to control spacing between lines */
+}
+
+.dextools-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.dextools-logo {
+  height: 2.1rem;
+  margin-right: 0.2rem;
+  margin-left: 0.4rem;
+}
+
 </style>
